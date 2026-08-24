@@ -1,0 +1,37 @@
+# SkyScout brain — pinned to what the verified runs actually used.
+# Python 3.12.3, Linux (native WSL2 filesystem), CPU only — no GPU anywhere.
+#
+#   python3.12 -m venv .venv-genesis
+#   .venv-genesis/bin/pip install -r requirements.txt
+#
+# IMPORTANT — torch must be the CPU build. The default PyPI wheel pulls ~2 GB of
+# CUDA libraries that are useless on this machine (AMD Ryzen 7 5700U, integrated
+# Radeon graphics). Install it from the CPU index FIRST, then the rest:
+#
+#   .venv-genesis/bin/pip install torch==2.13.0 \
+#       --index-url https://download.pytorch.org/whl/cpu
+#
+# Genesis pulls torch as a dependency, so installing the CPU wheel first keeps
+# pip from resolving the CUDA one.
+
+# --- simulator ---
+genesis-world==1.3.2
+torch==2.13.0+cpu          # CPU build — see note above
+
+# --- numerics: ESKF, GLCM, planners ---
+numpy==2.4.6
+scipy==1.18.0
+scikit-image==0.26.0
+
+# --- imaging, plots, HUD ---
+matplotlib==3.11.1
+pillow==11.3.0
+opencv-python==5.0.0.93
+imageio==2.37.4
+imageio-ffmpeg==0.6.0      # MP4 muxing for the mission clip
+
+# --- mesh / URDF handling ---
+trimesh==5.0.0
+
+# Blender is NOT a pip dependency. The cinematic pass (b5c_*.py) needs
+# Blender 4.5 LTS installed separately: https://www.blender.org/download/lts/

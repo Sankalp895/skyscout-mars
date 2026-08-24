@@ -1,0 +1,16 @@
+{
+ "plan": {
+  "length_m": 62.78365200523599,
+  "detour": 1.160870136234697,
+  "cruise_z": 3.3833788249044385,
+  "route_max_terrain": 0.38337882490443875,
+  "route_clearance_m": 2.5196850393700787
+ },
+ "reached": true,
+ "goal_err_m": 0.972207577746976,
+ "max_cross_track_m": 0.1994961528327508,
+ "mean_cross_track_m": 0.026819434232257338,
+ "min_agl_m": 3.0064576943021843,
+ "min_hazard_clearance_m": 2.5196850393700787,
+ "duration_s": 43.000000000007255
+}

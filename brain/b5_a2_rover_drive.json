@@ -1,0 +1,37 @@
+{
+ "start": [
+  -36.22047244094488,
+  33.7007874015748
+ ],
+ "goal": [
+  7.874015748031496,
+  -14.803149606299215
+ ],
+ "route": {
+  "length_m": 85.02850775262797,
+  "straight_m": 65.55116927951467,
+  "detour_ratio": 1.2971318236912084,
+  "expanded": 2219,
+  "min_clearance_m": 0.6299212598425197
+ },
+ "ride_height_m": 0.06896816392918659,
+ "cells_undrivable_true": 0,
+ "cells_undrivable_perceived": 0,
+ "true_slope_max_deg": 15.039594256644085,
+ "true_step_max_m": 0.21112198813784433,
+ "route_truly_drivable": true,
+ "differential": {
+  "with": {
+   "tilt_mean": 10.809962602952517,
+   "tilt_max": 20.150944550377943,
+   "rocker_sum_mean": 1.4498948138874055,
+   "travelled_m": 5.831352472305298
+  },
+  "without": {
+   "tilt_mean": 23.389161855575328,
+   "tilt_max": 32.815709179917135,
+   "rocker_sum_mean": 62.23984983079214,
+   "travelled_m": 5.8245849609375
+  }
+ }
+}

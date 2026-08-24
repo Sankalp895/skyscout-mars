@@ -1,0 +1,114 @@
+{
+ "params": {
+  "slope_ref_deg": 12.0,
+  "slope_max_deg": 25.0,
+  "obs_ref_m": 0.5,
+  "obs_max_m": 1.2,
+  "w_slope": 1.0,
+  "w_obs": 1.5,
+  "inflate_cells": 2,
+  "neighbourhood_m": 4.0
+ },
+ "summary": {
+  "grid": "128x128",
+  "cell_m": 0.63,
+  "blocked_cells": 4990,
+  "blocked_pct": 30.46,
+  "slope_deg_max": 56.49,
+  "prominence_m_max": 1.78,
+  "cost_min": 1.015,
+  "cost_max_finite": 5.046
+ },
+ "probes": [
+  {
+   "name": "crater centre (bowl floor)",
+   "x": -15.0,
+   "y": 10.0,
+   "slope_deg": 12.152259029256786,
+   "prominence_m": 0.0,
+   "blocked": false,
+   "cost": 2.012688252438066
+  },
+  {
+   "name": "crater RIM",
+   "x": -3.0,
+   "y": 10.0,
+   "slope_deg": 22.352670494408624,
+   "prominence_m": 0.30397019852637297,
+   "blocked": true,
+   "cost": null
+  },
+  {
+   "name": "ridge crest",
+   "x": 5.0,
+   "y": 15.0,
+   "slope_deg": 12.39042069066456,
+   "prominence_m": 0.6033775699650281,
+   "blocked": true,
+   "cost": null
+  },
+  {
+   "name": "boulder h=2.4 m",
+   "x": 12.7,
+   "y": 14.2,
+   "slope_deg": 34.67854765336133,
+   "prominence_m": 0.619289991928702,
+   "blocked": true,
+   "cost": null
+  },
+  {
+   "name": "boulder h=2.3 m",
+   "x": 1.0,
+   "y": 2.4,
+   "slope_deg": 12.192533342917956,
+   "prominence_m": 1.777202274384512,
+   "blocked": true,
+   "cost": null
+  },
+  {
+   "name": "boulder h=2.2 m",
+   "x": 16.1,
+   "y": -1.7,
+   "slope_deg": 14.867770316208539,
+   "prominence_m": 1.0761618343234574,
+   "blocked": true,
+   "cost": null
+  },
+  {
+   "name": "open ground (25,-25)",
+   "x": 25,
+   "y": -25,
+   "slope_deg": 4.96710086169507,
+   "prominence_m": 0.02190459578492257,
+   "blocked": false,
+   "cost": 1.4796388591626903
+  },
+  {
+   "name": "open ground (-30,-20)",
+   "x": -30,
+   "y": -20,
+   "slope_deg": 2.7377687279868406,
+   "prominence_m": 0.0,
+   "blocked": false,
+   "cost": 1.2281473939989034
+  },
+  {
+   "name": "open ground (30,25)",
+   "x": 30,
+   "y": 25,
+   "slope_deg": 4.2067966880655066,
+   "prominence_m": 0.0,
+   "blocked": false,
+   "cost": 1.3505663906721255
+  },
+  {
+   "name": "open ground (0,-30)",
+   "x": 0,
+   "y": -30,
+   "slope_deg": 8.3724928766498,
+   "prominence_m": 0.10683864433832446,
+   "blocked": false,
+   "cost": 2.0182236727357896
+  }
+ ]
+}

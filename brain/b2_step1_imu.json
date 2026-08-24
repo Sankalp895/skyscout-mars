@@ -1,0 +1,54 @@
+{
+ "params": {
+  "rate_hz": 240.0,
+  "gyro_noise_density": 0.0003,
+  "gyro_bias_rw": 3e-05,
+  "accel_noise_density": 0.003,
+  "accel_bias_rw": 0.0003,
+  "gyro_bias0": [
+   0.004,
+   -0.003,
+   0.002
+  ],
+  "accel_bias0": [
+   0.05,
+   -0.03,
+   0.04
+  ],
+  "seed": 7
+ },
+ "hand_checks": {
+  "hover_specific_force": [
+   0.0001,
+   -0.0,
+   3.72
+  ],
+  "hover_ok": true,
+  "freefall_specific_force": [
+   -0.0,
+   0.0,
+   0.0
+  ],
+  "freefall_ok": true
+ },
+ "accel_residual_mean": [
+  0.04902198865342239,
+  -0.03019819775476891,
+  0.039433816719398995
+ ],
+ "accel_residual_std": [
+  0.04557054261806241,
+  0.04588424148491981,
+  0.04653621747148227
+ ],
+ "gyro_residual_mean": [
+  0.003895370288821684,
+  -0.0030869362974372716,
+  0.002051587718662764
+ ],
+ "gyro_residual_std": [
+  0.00452855175603754,
+  0.004585528599312693,
+  0.0045545905684416365
+ ]
+}

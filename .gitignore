@@ -1,19 +1,27 @@
-# --- Third-party reference clone (NOT part of this repo) ---
-# text-to-cad (github.com/earthtojake/text-to-cad) is used as an external
-# reference/toolchain for this project. It is a 2.1 GB independent git clone
-# and is intentionally excluded. See README.md -> "External reference".
+# ============================================================
+# Third-party reference clone (NOT part of this repo)
+# text-to-cad (github.com/earthtojake/text-to-cad) is an external
+# reference/toolchain: a 2.1 GB independent git clone, 35k files.
+# Intentionally excluded. See README.md -> "External reference".
+# ============================================================
 text-to-cad/
+
+# --- Virtual environments (never commit) ---
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+*/.venv/
+*/.venv-*/
 
 # --- Python ---
 __pycache__/
+*/__pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
-venv/
-.venv/
-ENV/
 build/
 dist/
 *.egg-info/
@@ -23,12 +31,37 @@ dist/
 .ruff_cache/
 .ipynb_checkpoints/
 
+# --- Regenerable frame sequences (large, reproducible from the sim) ---
+brain/renders/anim2_raw/
+brain/renders/anim2_final/
+brain/renders/hud_frames/
+brain/renders/*.log
+brain/hud_frames/
+brain/frames/
+brain/b1_frames/
+
+# --- Scratch probe arrays ---
+*.npy
+
+# --- Large meshes are pulled from the CAD project (SKYSCOUT_MODELS) ---
+brain/models/
+
+# --- Shader / GPU / EGL caches ---
+*.shadercache
+shadercache/
+.cache/
+.nv/
+.egl_cache/
+*.eglcache
+ti_cache/
+.taichi/
+
 # --- Blender ---
 *.blend1
 *.blend2
 *.blend@
 
-# --- PyBullet / sim scratch ---
+# --- Logs ---
 *.log
 logs/
 

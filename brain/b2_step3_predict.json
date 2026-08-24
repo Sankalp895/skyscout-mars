@@ -1,0 +1,9 @@
+{
+ "overlay_max_diff_m": 0.0,
+ "eskf_final_err_m": 10.938143011635493,
+ "dr_final_err_m": 10.938143011635493,
+ "sigma_pos_final_m": 31.372289588246876,
+ "sigma_over_error": 2.8681550017104804,
+ "monotone": true,
+ "pass": true
+}

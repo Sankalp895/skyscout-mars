@@ -1,0 +1,38 @@
+{
+ "start": [
+  3.0,
+  -8.0
+ ],
+ "goal": [
+  -29.0,
+  28.0
+ ],
+ "plan_perceived": {
+  "length_m": 64.80003633706382,
+  "straight_m": 48.16637831516918,
+  "detour_ratio": 1.3453375280378128,
+  "expanded": 1847,
+  "min_clearance_m": 0.6299212598425197
+ },
+ "cruise_z": 4.021174161707531,
+ "reached": true,
+ "goal_err_m": 0.6200341701506865,
+ "duration_s": 44.58333333334185,
+ "max_xtrack_m": 1.2721721431401747,
+ "min_agl_m": 2.8599516608641427,
+ "eskf_mean_m": 0.5247839603000425,
+ "eskf_max_m": 1.7943119444363511,
+ "closest_real_hazard_m": 1.889763779527559,
+ "closest_perceived_hazard_m": 1.2598425196850394,
+ "closest_missed_hazard_m": 2.672529566689313,
+ "surprise_m": -0.6299212598425197,
+ "miss_cells": 35,
+ "error_budget": {
+  "ESKF position error (B2/B3)": 0.5247839603000425,
+  "map smear from estimated pose (step 3)": 0.432,
+  "controller cross-track (B3 step 3)": 0.199
+ },
+ "stacked_linear_m": 1.1557839603000426,
+ "verdict_miss": "no meaningful surprise: the real margin matched what the map promised",
+ "verdict_margin": "CLEARED WITH MARGIN -- the real gap exceeds the whole stacked error"
+}

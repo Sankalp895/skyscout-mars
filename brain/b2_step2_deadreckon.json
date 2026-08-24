@@ -1,0 +1,13 @@
+{
+ "perfect_imu_final_pos_err_m": 0.0016006475880871584,
+ "perfect_imu_max_pos_err_m": 0.003645346272134911,
+ "real_imu_final_pos_err_m": 10.938143011635493,
+ "real_imu_final_vel_err_mps": 2.0583057015834205,
+ "real_imu_final_att_err_deg": 4.422069960153232,
+ "real_imu_final_offset_m": [
+  -0.3091991472122526,
+  -10.18498113318659,
+  3.976622655845887
+ ],
+ "duration_s": 14.354166666666172
+}

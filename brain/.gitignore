@@ -1,0 +1,25 @@
+# environment
+.venv/
+.venv-genesis/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# rendered frame sequences (regenerable, ~1.9 GB)
+renders/anim2_raw/
+renders/anim2_final/
+renders/hud_frames/
+renders/hud_keyframes/
+renders/*.log
+
+# scratch arrays from probes
+*.npy
+
+# large model meshes are pulled from the CAD project
+models/
+
+# regenerable frame sequences at repo root
+hud_frames/
+frames/
+b1_frames/

@@ -1,0 +1,21 @@
+{
+ "route_clearance_m": 2.5196850393700787,
+ "inflation_m": 1.2598425196850394,
+ "truth_guided": {
+  "reached": true,
+  "goal_err_m": 0.972207577746976,
+  "max_xtrack_true_m": 0.1994961528327508,
+  "min_hazard_clearance_m": 2.5196850393700787
+ },
+ "estimate_guided": {
+  "reached": true,
+  "goal_err_m": 1.2277488933720537,
+  "max_xtrack_true_m": 1.262592961469032,
+  "max_xtrack_estimate_m": 0.9462100324122673,
+  "min_hazard_clearance_m": 1.889763779527559,
+  "min_agl_m": 2.708874962641164
+ },
+ "eskf_err_mean_m": 0.5283872607738496,
+ "eskf_err_max_m": 1.7883261633893386,
+ "verdict": "PASSED WITH MARGIN -- 1.89 m of the 2.52 m budget survived, plus 1.26 m inflation still in hand"
+}

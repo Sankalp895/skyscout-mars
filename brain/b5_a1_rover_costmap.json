@@ -1,0 +1,22 @@
+{
+ "rover_params": {
+  "wheel_radius_m": 0.29,
+  "max_slope_deg": 20.0,
+  "slope_ref_deg": 8.0,
+  "step_ref_m": 0.1,
+  "w_slope": 1.0,
+  "w_step": 2.0,
+  "inflate_cells": 1,
+  "unknown_blocks": true
+ },
+ "step_limit_m": 0.29,
+ "known_cells": 6468,
+ "blocked_both": 1861,
+ "blocked_rover_only": 888,
+ "blocked_drone_only": 0,
+ "free_both": 3719,
+ "cause_step_only": 427,
+ "cause_slope_only": 146,
+ "cause_both": 315,
+ "drivable_components": 15
+}

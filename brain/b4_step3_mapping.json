@@ -1,0 +1,43 @@
+{
+ "frames": 78,
+ "survey_s": 166.08333333326445,
+ "coverage": {
+  "region_cells": 4096,
+  "known": 4094,
+  "unknown": 2,
+  "pct": 99.951171875
+ },
+ "agreement": {
+  "tp": 1238,
+  "fp": 173,
+  "fn": 32,
+  "tn": 2651,
+  "precision": 0.8773919206236711,
+  "recall": 0.9748031496062992,
+  "f1": 0.9235359940320775,
+  "miss_rate": 0.025196850393700787,
+  "false_alarm_rate": 0.061260623229461755,
+  "iou": 0.8579348579348579,
+  "n_observed": 4094,
+  "n_true_hazard": 1270
+ },
+ "smear": {
+  "eskf_mean_m": 0.4700942648873189,
+  "eskf_max_m": 1.325625742673138,
+  "horiz_mean_m": 0.4317004360458316,
+  "horiz_max_m": 1.2776047373267654,
+  "tilt_mean_deg": 0.00013671075834021038,
+  "perceived_to_true_mean_m": 0.08875788304272414,
+  "perceived_to_true_p90_m": 0.6299212598425197,
+  "true_to_perceived_mean_m": 0.01607748208190122,
+  "true_to_perceived_p90_m": 0.0
+ },
+ "map": {
+  "known_cells": 6468,
+  "known_pct": 39.48,
+  "hazard_cells": 1861,
+  "mean_obs_per_known_cell": 4.21,
+  "max_obs": 10
+ },
+ "rejected_frames": []
+}
