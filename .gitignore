@@ -1,0 +1,43 @@
+# --- Third-party reference clone (NOT part of this repo) ---
+# text-to-cad (github.com/earthtojake/text-to-cad) is used as an external
+# reference/toolchain for this project. It is a 2.1 GB independent git clone
+# and is intentionally excluded. See README.md -> "External reference".
+text-to-cad/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Blender ---
+*.blend1
+*.blend2
+*.blend@
+
+# --- PyBullet / sim scratch ---
+*.log
+logs/
+
+# --- OS / editor ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.idea/
+.vscode/
+*.swp
