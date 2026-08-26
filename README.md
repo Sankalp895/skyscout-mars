@@ -62,12 +62,12 @@ Standing constraints, applied in every phase:
 
 - **Act only on what was perceived.** Perception is *scored* against ground truth; the system never
   *acts* on truth. The drone plans over the map it built.
-- **`unknown` is never `safe`.** Unobserved cells stay a distinct third state — letting unknown read
+- **`unknown` is never `safe`.** Unobserved cells stay a distinct third state, letting unknown read
   as safe is a miss generator.
 - **Honest coupling.** `capture()` uses the TRUE body pose; `project()` uses the ESTIMATE. The gap
-  between them is the map smear — surfaced, not hidden.
-- **Judge in truth space, one hand-check per claim.** Report **both** failure directions — miss vs.
-  false-alarm — never a lone aggregate.
+  between them is the map smear surfaced, not hidden.
+- **Judge in truth space, one hand-check per claim.** Report **both** failure directions, miss vs.
+  false-alarm, never a lone aggregate.
 
 ## Running it
 
