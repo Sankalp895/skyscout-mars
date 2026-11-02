@@ -10,6 +10,18 @@ on one mission-control HUD.
 Mars gravity −3.72 m/s². Built and verified entirely on CPU — AMD Ryzen 7 5700U with integrated
 graphics under WSL2, **no GPU anywhere in the pipeline**.
 
+[![Watch the 50 second mission video](renders/3_scout_and_drive.png)](renders/skyscout_scout_mission.mp4)
+
+**[▶ Watch the 50 second mission video](renders/skyscout_scout_mission.mp4)**. The drone scouts ahead
+while the rover drives the route it found. Geometry comes from the recorded simulation logs.
+
+![Mission control HUD: the map fills in as the drone scouts](brain/skyscout_mission.gif)
+
+*The mission-control HUD. Map coverage climbs to 100% while the drone localizes without GPS, then
+the rover is cleared to drive.*
+
+Project write-up: [sankalpvertex.com/missions](https://sankalpvertex.com/missions)
+
 > **Start here:** [`SKYSCOUT_RESUME.md`](SKYSCOUT_RESUME.md) — project context, scope, environment,
 > phase map, verified results, and the standing engineering rules.
 
@@ -29,6 +41,33 @@ graphics under WSL2, **no GPU anywhere in the pipeline**.
 
 Full breakdown, architecture diagram, and the failures that were caught along the way:
 [`brain/README.md`](brain/README.md).
+
+### The two results that matter most
+
+![GPS-denied localization: 197.6 m of drift without correction, 0.38 m with it](brain/b2_step4_correct.png)
+
+*Without GPS, dead-reckoning drifts 197.6 m in 40 s. With a position fix once a second, the
+filter ends the run 0.38 m from the truth. The bias estimates (bottom two panels) converge on the
+injected values, which shows the filter observes the full state and does not just snap the position.*
+
+![Closing the loop: a route planned on the drone's own map, judged against the real terrain](brain/b4_step4_closeloop.png)
+
+*The drone plans over the map it built itself and flies it on its own position estimate. Scored
+against the real terrain, the closest real hazard stays 1.89 m away, above the 1.16 m error budget.
+Grey cells are unknown and are never treated as safe.*
+
+## Gallery
+
+<table>
+  <tr>
+    <td><img src="renders/1_reveal.png" alt="Helipad reveal" width="100%"></td>
+    <td><img src="renders/2_flight.png" alt="Drone in flight" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="renders/3_scout_and_drive.png" alt="Scout and drive" width="100%"></td>
+    <td><img src="renders/4_rover_detail.png" alt="Rover detail" width="100%"></td>
+  </tr>
+</table>
 
 ## Repository layout
 
@@ -68,6 +107,17 @@ Standing constraints, applied in every phase:
   between them is the map smear surfaced, not hidden.
 - **Judge in truth space, one hand-check per claim.** Report **both** failure directions, miss vs.
   false-alarm, never a lone aggregate.
+
+## Limitations
+
+- **Simulation only.** No hardware was built or tested. Every result comes from a simulated Mars world.
+- **One synthetic world.** The terrain is a procedural 80 × 80 m heightfield (fixed seed 20260808).
+  The results show the pipeline works end to end on that world. They do not show it generalizes to
+  other terrain or to real Mars imagery.
+- **Scored against the simulator's own ground truth.** Perception is judged on terrain the same
+  simulator generated, so the numbers say nothing about real sensor noise.
+- **The cinematic pass is presentation.** The Blender renders replay recorded trajectory logs. The
+  one shot with no logged motion (the rover reveal) uses authored poses, not simulated output.
 
 ## Running it
 
